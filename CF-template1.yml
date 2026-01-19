@@ -35,20 +35,6 @@ Resources:
         Value: WWC-A
       - Key: Owner
         Value: TeamA
-
-  MyRouteTable:
-    Type: AWS::EC2::RouteTable
-    Properties:
-      VpcId: !Ref MyVPC
-      Tags:
-        - Key: Name
-          Value: MyRouteTable
-        - Key: Environment
-          Value: Sandbox
-        - Key: CostCenter
-          Value: WWC-A
-        - Key: Owner
-          Value: TeamA
 Outputs:
   VPCId:
     Description: VPC ID
